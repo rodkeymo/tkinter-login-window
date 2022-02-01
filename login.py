@@ -17,19 +17,23 @@ from tkinter import *
        message.set("Login success")
       else:
        message.set("Wrong username or password!!!")
-#defining loginform function
+
+    #defining loginform function
     
     def Loginform():
     global login_screen
     login_screen = Tk()
-#Setting title of screen
+
+    #Setting title of screen
  
     login_screen.title("Login Form")
 
-#setting height and width of screen
+
+    #setting height and width of screen
  
     login_screen.geometry("300x250")
-#declaring variable
+
+    #declaring variable
  
     
     global  message;
@@ -39,20 +43,25 @@ from tkinter import *
     password = StringVar()
     message=StringVar()
     
-#Creating layout of login form
+
+    #Creating layout of login form
     
     Label(login_screen,width="300", text="Please enter details below", bg="orange",fg="white").pack()
-#Username Label
+
+    #Username Label
     
     Label(login_screen, text="Username * ").place(x=20,y=40)
  
- #Username textbox
+ 
+    #Username textbox
     
     Entry(login_screen, textvariable=username).place(x=90,y=42)
 
-#Password Label
+
+    #Password Label
     Label(login_screen, text="Password * ").place(x=20,y=80)
    
+
 #Password textbox
     
     Entry(login_screen, textvariable=password ,show="*").place(x=90,y=82)
